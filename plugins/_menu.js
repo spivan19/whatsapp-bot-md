@@ -25,6 +25,7 @@ bot.addCommand(
 │ Time : ${date.toLocaleTimeString()}
 │ Day : ${date.toLocaleString('en', { weekday: 'long' })}
 │ Date : ${date.toLocaleDateString('hi')}
+│ Proprio : D. R. Spirou †
 │ Version : ${VERSION}
 │ Plugins : ${PLUGINS.count}
 │ Ram : ${getRam()}
