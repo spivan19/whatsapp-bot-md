@@ -54,7 +54,7 @@ bot(
 		}
 		if (match == 'on' || match == 'off') {
 			if (match == 'off' && !antilink)
-				return await message.send('_AntiLink is not enabled._')
+				return await message.send('_Antilink pas activé dans ce groupe_')
 			await setAntiLink(message.jid, match == 'on')
 			return await message.send(
 				`_AntiLink ${match == 'on' ? 'Enabled' : 'Disabled.'}_`
@@ -71,11 +71,11 @@ bot(
 			const action = match.replace('action/', '')
 			if (!['warn', 'kick', 'null'].includes(action))
 				return await message.send('*Invalid action*')
-			return await message.send(`_AntiLink action updated as ${action}_`)
+			return await message.send(`_AntiLink mis à jour sur ${action}_`)
 		}
 		const res = await setAntiLink(message.jid, match)
 		return await message.send(
-			`_AntiLink allowed urls are_\nAllow - ${res.allow.join(
+			`_Liens autorisés dans le groupe_\nAllow - ${res.allow.join(
 				', '
 			)}\nNotAllow - ${res.notallow.join(', ')}`
 		)
