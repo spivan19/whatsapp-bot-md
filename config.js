@@ -57,7 +57,7 @@ module.exports = {
   KOYEB_NAME: (process.env.KOYEB_NAME || '').trim(),
   KOYEB_API: (process.env.KOYEB_API || '').trim(),
   AJOIN: toBool(process.env.AJOIN),
-  GPT: (process.env.GPT || '').trim(),
+  GPT: (process.env.GPT || 'free').trim(),
   MODEL: (process.env.MODEL || 'gpt-3.5-turbo').trim(),
   APPROVE: (process.env.APPROVE || '').trim(),
   ANTI_DELETE: (process.env.ANTI_DELETE || 'null').trim(),
@@ -69,9 +69,12 @@ module.exports = {
   ANTI_BOT_MESSAGE: process.env.ANTI_BOT_MESSAGE || '&mention removed',
   WARN_MESSAGE:
     process.env.WARN_MESSAGE ||
-    '⚠️WARNING⚠️\n*User :* &mention\n*Warn :* warn\n*Remaining :* &remaining',
+    '⚠️WARNING⚠️\n*User :* &mention\n*Warn :* &warn\n*Remaining :* &remaining',
   WARN_RESET_MESSAGE:
     process.env.WARN_RESET_MESSAGE || `WARN RESET\nUser : &mention\nRemaining : &remaining`,
   WARN_KICK_MESSAGE: process.env.WARN_KICK_MESSAGE || '&mention kicked',
   TRUECALLER: process.env.TRUECALLER,
+  DELETE_TYPE: (process.env.DELETE_TYPE || '').trim(),
+  LIST_TYPE: (process.env.LIST_TYPE || 'poll').trim(),
+  BING_COOKIE: (process.env.BING_COOKIE || '').trim(),
 }
