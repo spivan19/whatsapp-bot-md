@@ -44,7 +44,7 @@ module.exports = {
   DIS_BOT: process.env.DISABLE_BOT || 'null',
   ANTILINK_MSG: process.env.ANTILINK_MSG || '_Desole &mention mais D. R. Spirou a interdit les liens dans ce groupe_',
   ANTISPAM_MSG: process.env.ANTISPAM_MSG || '_Arretes de spam &mention_',
-  ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_Oula c'est un gros mot ça &mention_',
+  ANTIWORDS_MSG: process.env.ANTIWORDS_MSG || '_Oula un gros mot ça &mention_',
   ANTIWORDS: process.env.ANTIWORDS || 'word',
   MENTION: process.env.MENTION || '',
   MAX_UPLOAD: process.env.MAX_UPLOAD || 230,
@@ -65,10 +65,10 @@ module.exports = {
     ? toBool(process.env.DISABLE_START_MESSAGE)
     : false,
   ANTI_BOT: (process.env.ANTI_BOT || 'off').trim(),
-  ANTI_BOT_MESSAGE: process.env.ANTI_BOT_MESSAGE || '&mention Bye 👋 pas de bots ici à part moi',
+  ANTI_BOT_MESSAGE: process.env.ANTI_BOT_MESSAGE || '&mention Bye 👋 pas de bots ici à part le mien',
   WARN_MESSAGE:
     process.env.WARN_MESSAGE ||
-    '⚠️ ATTENTION ⚠️\n*User :* &mention\n*Attention tu viens de perdre une grâce sacrée offerte par Spirou:* &warn\n*Grâces restantes:* &remaining',
+    '⚠️ ATTENTION ⚠️\n :* &mention\n*Attention tu viens de perdre une grâce sacrée offerte par BrOken:* &warn\n*Grâces restantes:* &remaining',
   WARN_RESET_MESSAGE:
     process.env.WARN_RESET_MESSAGE || `WARN RESET\nUser : &mention\Grâces restantes : &remaining`,
   WARN_KICK_MESSAGE: process.env.WARN_KICK_MESSAGE || '&mention a été kick car a épuisé ses grâces',
