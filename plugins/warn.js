@@ -10,7 +10,7 @@ const {
 
 bot(
   {
-    pattern: 'warn ?(.*)',
+    pattern: 'becareful ?(.*)',
     fromMe: true,
     desc: 'warn users in chat',
     type: 'group',
